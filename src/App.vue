@@ -1,7 +1,6 @@
 <template>
   <v-app id="inspire">
     <nav-drawer></nav-drawer>
-    <tool-bar></tool-bar>
     <v-content>
       <v-container fluid fill-height class="grey lighten-4">
         <v-layout justify-center align-center>
@@ -16,18 +15,13 @@
 
 <script>
   import NavDrawer from './components/NavDrawer.vue'
-  import ToolBar from './components/ToolBar.vue'
 
   export default {
     components: {
-      NavDrawer,
-      ToolBar
-    },
-    created () {
-      this.$store.dispatch('checkForCredentials')
+      NavDrawer
     },
     data: () => ({
-
+      //
     }),
     props: {
       source: String

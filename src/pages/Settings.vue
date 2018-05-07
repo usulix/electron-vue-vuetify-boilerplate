@@ -9,7 +9,7 @@
               v-model="name"
               label="Name"
           ></v-text-field>
-          <v-btn @click="setCredentials">Set Them</v-btn>
+          <v-btn @click="setBaz">Set Baz</v-btn>
         </v-card>
       </v-expansion-panel-content>
     </v-expansion-panel>
@@ -23,13 +23,13 @@
     data () {
       return {
         settings: [
-          {title: 'Credentials', description: 'You will need IAM credentials to access your AWS account.'}
+          {title: 'BazOption', description: 'Set Your Baz!'}
         ],
         name: ''
       }
     },
     methods: {
-      setCredentials () {
+      setBaz () {
         //
       }
     }
