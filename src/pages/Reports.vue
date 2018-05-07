@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    Bar
+    Reports
   </div>
 </template>
 <style lang="scss" scoped>

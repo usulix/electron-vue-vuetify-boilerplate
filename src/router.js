@@ -1,12 +1,12 @@
-import Baz from './pages/Baz.vue'
-import Foo from './pages/Foo.vue'
-import Bar from './pages/Bar.vue'
+import Index from './pages/Index.vue'
+import Settings from './pages/Settings.vue'
+import Reports from './pages/Reports.vue'
 
 module.exports = {
   routes: [
-    { path: '/', component: Baz },
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar },
+    { path: '/', component: Index },
+    { path: '/settings', component: Settings },
+    { path: '/reports', component: Reports },
     { path : '*', redirect : '/' }
   ]
 };

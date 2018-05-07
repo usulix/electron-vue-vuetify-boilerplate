@@ -26,12 +26,12 @@ module.exports = env => {
         },
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader"]
+          loader: "style-loader!css-loader"
         },
         {
           test: /\.vue$/,
           loader: 'vue-loader',
-          options: {extractCSS: true,optimizeSSR: false }
+          options: {optimizeSSR: false }
         }
       ]
     },

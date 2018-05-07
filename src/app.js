@@ -9,7 +9,9 @@ import jetpack from "fs-jetpack"
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { routes } from './router.js'
-import App from './App.vue';
+import store from './store'
+import App from './App.vue'
+import Vuetify from 'vuetify'
 
 const app = remote.app
 const appDir = jetpack.cwd(app.getAppPath())
@@ -25,6 +27,7 @@ const osMap = {
 };
 
 Vue.use(VueRouter)
+Vue.use(Vuetify)
 
 const router = new VueRouter({
   routes // short for `routes: routes`
@@ -32,5 +35,6 @@ const router = new VueRouter({
 
 const appInstance = new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
