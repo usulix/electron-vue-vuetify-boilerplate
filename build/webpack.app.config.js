@@ -11,6 +11,12 @@ module.exports = env => {
     output: {
       filename: "[name].js",
       path: path.resolve(__dirname, "../app")
-    }
+    },
+    resolve: {
+      alias: {
+        '~': path.resolve(__dirname, `../src`)
+      },
+      extensions: ['.vue', '.js', '.json']
+    }  
   });
 };
